@@ -14,9 +14,9 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 # MongoDB connection
 
-uri = os.getenv('uri')
+uri = os.getenv("uri")
 client= MongoClient(uri)
-db = client['APRIL_DownSample']
+db = client["APRIL_DownSample"]
 
 # Collections
 collections = {
@@ -99,9 +99,9 @@ def get_data():
 
 
 
-uri_Commit = os.getenv('uri_Commit')
+uri_Commit = os.getenv("uri_Commit")
 client_commit = MongoClient(uri_Commit)
-db_commit = client_commit['CommitmentCards']
+db_commit = client_commit["CommitmentCards"]
 
 # Connect to MongoDB
 client2 = MongoClient(uri_Commit)
