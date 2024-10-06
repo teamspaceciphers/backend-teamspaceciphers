@@ -278,7 +278,7 @@ import os
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__, static_folder='frontend/dist')  # Assuming your React build is in 'frontend/dist'
+app = Flask(__name__, static_folder='./frontend/dist')  # Assuming your React build is in 'frontend/dist'
 CORS(app, resources={r"/*": {"origins": os.getenv("https://frontend-teamspaceciphers-92sg.vercel.app/", "http://localhost:5173")}})
 
 # MongoDB connection
