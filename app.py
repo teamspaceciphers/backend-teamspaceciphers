@@ -279,7 +279,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__, static_folder='./frontend/dist')  # Assuming your React build is in 'frontend/dist'
-CORS(app, resources={r"/*": {"origins": os.getenv("https://frontend-teamspaceciphers-92sg.vercel.app/", "http://localhost:5173")}})
+CORS(app, resources={r"/*": {"origins": os.getenv("https://demo-tau-sage.vercel.app/", "http://localhost:5173")}})
 
 # MongoDB connection
 uri = os.getenv("uri")  # Production URI
